@@ -1,0 +1,76 @@
+definitions:
+  GiveNewSchemaNameHere:
+    properties:
+      Hello:
+        default: World
+        type: string
+    type: object
+  TibcoResponse:
+    properties:
+      Response is:
+        default: Hello Tibco
+        type: string
+    type: object
+  formgot:
+    properties:
+      Form submitted:
+        default: Done
+        type: string
+    type: object
+info:
+  title: HelloWorld
+  version: 1.0.0
+  x-lastModified: Jan 19, 2017 00:33AM PST
+paths:
+  /String/{name}:
+    get:
+      parameters:
+      - description: Query parameter
+        format: ""
+        in: query
+        name: query
+        required: false
+        type: string
+      - description: ""
+        format: ""
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              Hello: World
+          schema:
+            $ref: '#/definitions/GiveNewSchemaNameHere'
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: ""
+        format: ""
+        in: path
+        name: name
+        required: true
+        type: string
+      - description: Choose file to get response
+        format: text
+        in: formData
+        name: file
+        required: false
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success response
+          examples:
+            application/json:
+              Form submitted: Done
+          schema:
+            $ref: '#/definitions/formgot'
+swagger: "2.0"

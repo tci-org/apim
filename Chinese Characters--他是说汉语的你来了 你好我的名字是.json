@@ -1,0 +1,10 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "21",
+    "title": "Chinese Characters:-他是说汉语的你来了 你好我的名字是",
+    "x-lastModified": "Jan 13, 2017 01:11AM PST",
+    "description": "他是说汉语的你来了\n你好我的名字是 Nikhil。 我做测试 API Modeler .的, 我使用的是中文字符的情况。 因此, 我想要中文的字符来测试。 请帮助我在这。"
+  },
+  "paths": {}
+}

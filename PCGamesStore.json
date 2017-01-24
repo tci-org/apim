@@ -1,0 +1,55 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "PCGamesStore",
+    "x-lastModified": "Jan 08, 2017 22:59PM PST"
+  },
+  "paths": {
+    "/gamesstore/{name}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GameName1"
+            },
+            "examples": {
+              "application/json": {
+                "Game is": "Assassins Creed"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "Id of the required game",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "GameName": {
+      "Game is": "Assassins Creed"
+    },
+    "GameName1": {
+      "type": "object",
+      "properties": {
+        "Game is": {
+          "type": "string",
+          "default": "Assassins Creed"
+        }
+      }
+    }
+  }
+}

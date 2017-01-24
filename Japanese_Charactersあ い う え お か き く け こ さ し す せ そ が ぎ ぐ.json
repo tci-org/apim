@@ -1,0 +1,10 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "3",
+    "title": "Japanese_Charactersあ い う え お か き く け こ さ し す せ そ が ぎ ぐ",
+    "x-lastModified": "Jan 12, 2017 23:01PM PST",
+    "description": "あ い う え お か き く け こ さ し す せ そ が ぎ ぐ げ ご ぱ ぴ ぷ ぺ ぽ\nア イ ウ エ オ カ キ ク ケ コ サ シ ス セ ソ ガ ギ グ ゲ ゴ パ ピ プ ペ ポ\n川 月 木 心 火 左 北 今 名 美 見 外 成 空 明 静 海 雲 新 語 道 聞 強 飛\na i u e o ka ki ku ke ko sa shi su se so ā ū ō"
+  },
+  "paths": {}
+}
