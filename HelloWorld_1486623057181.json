@@ -1,0 +1,116 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "HelloWorld",
+    "x-lastModified": "Jan 19, 2017 00:33AM PST"
+  },
+  "paths": {
+    "/String/{name}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/GiveNewSchemaNameHere"
+            },
+            "examples": {
+              "application/json": {
+                "Hello": "World"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "description": "Query parameter",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ]
+      },
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/formgot"
+            },
+            "examples": {
+              "application/json": {
+                "Form submitted": "Done"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "file",
+            "in": "formData",
+            "description": "Choose file to get response",
+            "required": false,
+            "type": "file",
+            "format": "text"
+          }
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "TibcoResponse": {
+      "type": "object",
+      "properties": {
+        "Response is": {
+          "type": "string",
+          "default": "Hello Tibco"
+        }
+      }
+    },
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "Hello": {
+          "type": "string",
+          "default": "World"
+        }
+      }
+    },
+    "formgot": {
+      "type": "object",
+      "properties": {
+        "Form submitted": {
+          "type": "string",
+          "default": "Done"
+        }
+      }
+    }
+  }
+}
