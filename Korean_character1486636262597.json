@@ -1,0 +1,10 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1212",
+    "title": "Korean_charactersㄱ ㄲ ㄴ ㄷ ㄸ ㄹ ㅁ ㅂ ㅃ ㅅ ㅆ ㅇ ㅈ ㅉ ㅊ ㅋ ㅌ ㅍ ㅎㅏ",
+    "x-lastModified": "Jan 13, 2017 01:58AM PST",
+    "description": "Korean characters areㄱ ㄲ ㄴ ㄷ ㄸ ㄹ ㅁ ㅂ ㅃ ㅅ ㅆ ㅇ ㅈ ㅉ ㅊ ㅋ ㅌ ㅍ\nㅎㅏ ㅐ ㅑ ㅒ ㅓ ㅔ ㅕ ㅖ ㅗ ㅘ ㅙ ㅚ ㅛ ㅜ ㅝ ㅞ ㅟ ㅠ ㅡ ㅢ ㅣ"
+  },
+  "paths": {}
+}
