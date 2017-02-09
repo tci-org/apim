@@ -1,55 +1,10 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
-    "title": "PCGamesStore",
-    "x-lastModified": "Jan 08, 2017 22:59PM PST"
+    "version": "21",
+    "title": "Chinese Characters:-他是说汉语的你来了 你好我的名字是",
+    "x-lastModified": "Jan 13, 2017 01:11AM PST",
+    "description": "他是说汉语的你来了\n你好我的名字是 Nikhil。 我做测试 API Modeler .的, 我使用的是中文字符的情况。 因此, 我想要中文的字符来测试。 请帮助我在这。"
   },
-  "paths": {
-    "/gamesstore/{name}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success response",
-            "schema": {
-              "$ref": "#/definitions/GameName1"
-            },
-            "examples": {
-              "application/json": {
-                "Game is": "Assassins Creed"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "name",
-            "in": "path",
-            "description": "Id of the required game",
-            "required": true,
-            "type": "integer",
-            "format": "int32",
-            "default": 0
-          }
-        ]
-      }
-    }
-  },
-  "definitions": {
-    "GameName": {
-      "Game is": "Assassins Creed"
-    },
-    "GameName1": {
-      "type": "object",
-      "properties": {
-        "Game is": {
-          "type": "string",
-          "default": "Assassins Creed"
-        }
-      }
-    }
-  }
+  "paths": {}
 }
